@@ -54,5 +54,8 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+// include your new routes here:
+app.use('/api', require('./routes/thing-routes'));
+
 
 module.exports = app;
