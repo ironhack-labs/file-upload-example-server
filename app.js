@@ -33,10 +33,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 // ADD CORS HERE:
 
-const index = require('./routes/index');
+const index = require('./routes/index.routes');
 app.use('/', index);
 
 // include your new routes here:
-app.use('/api', require('./routes/thing-routes'));
+app.use('/api', require('./routes/thing.routes'));
 
 module.exports = app;
